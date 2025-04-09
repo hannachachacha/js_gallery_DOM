@@ -10,6 +10,8 @@ miniImgs.onclick = () => {
 
   if (event.target.tagName === 'IMG') {
     link = event.target.parentElement;
+  } else {
+    link = event.target;
   }
 
   mainImage.src = link.href;
